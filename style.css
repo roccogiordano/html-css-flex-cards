@@ -15,9 +15,56 @@
 
 .description {
     width: 70%;
-    margin: 45px auto 35px auto;
+    margin: 45px auto 30px auto;
     font-family: "Fredoka", sans-serif;
     font-size: 1rem;
     font-weight: 300;
     text-align: center;
+}
+
+.container-flex {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.flex-card {
+    display: flex;
+    width: calc(100% / 3 - 20px);
+    height: 70px;
+    margin: 15px 10px;
+    background-color: black;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+}
+
+.name {
+    font-family: "Fredoka", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    margin: 5px 5px 2px 10px;
+}
+
+.occupation {
+    font-family: "Fredoka", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: white;
+    margin: 2px 5px 5px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: deepskyblue;
+    font-family: "Fredoka", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin: 5px 5px 3px 10px;
 }
