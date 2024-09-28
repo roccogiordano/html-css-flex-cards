@@ -1,10 +1,10 @@
 * {
  margin: 0;
  padding: 0;
- box-sizing: content-box;
+ box-sizing: border-box;
 }
 
-.title {
+h1 {
     margin-top: 30px;
     font-family: "Fredoka", sans-serif;
     font-size: 2rem;
@@ -23,7 +23,7 @@
 }
 
 .container-flex {
-    width: 80%;
+    max-width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -33,9 +33,9 @@
 .flex-card {
     display: flex;
     width: calc(100% / 3 - 20px);
-    height: 70px;
     margin: 15px 10px;
     background-color: black;
+    box-shadow: 1px 1px 3px 2px lightgrey
 }
 
 img {
@@ -43,13 +43,13 @@ img {
     height: 70px;
 }
 
-.name {
+h2 {
     font-family: "Fredoka", sans-serif;
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     color: white;
-    margin: 5px 5px 2px 10px;
+    margin: 5px 10px 2px 10px;
 }
 
 .occupation {
@@ -57,7 +57,7 @@ img {
     font-size: 0.8rem;
     font-weight: 300;
     color: white;
-    margin: 2px 5px 5px 10px;
+    margin: 2px 10px 5px 10px;
 }
 
 a {
@@ -66,5 +66,17 @@ a {
     font-family: "Fredoka", sans-serif;
     font-size: 0.8rem;
     font-weight: 300;
-    margin: 5px 5px 3px 10px;
+    margin: 5px 10px 3px 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .flex-card {
+        width: calc(100% / 2 - 20px);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .flex-card {
+        width: calc(100% - 20px);
+    }
 }
